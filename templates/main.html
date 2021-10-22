@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tomato Leaf Disease</title>
+</head>
+<body>
+<h1>Tomato Leaf Disease Detection</h1>
+
+<h3>Upload tomato leaf image</h3>
+<form id="upload-form" action="{{ url_for('main') }}" method="POST" enctype="multipart/form-data">
+<input type="file" name="file" accept="image/*" >
+    <input type="submit" value="Upload!">
+    </form>
+
+</body>
+</html>
